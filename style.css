@@ -4,7 +4,8 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
+    color: #57534e;
 }
 
 main {
@@ -56,6 +57,7 @@ form label {
 }
 
 form input[type="text"],
+form input[type="number"],
 form input[type="date"],
 form input[type="tel"],
 form input[type="email"],
@@ -103,7 +105,8 @@ input[type="checkbox"] {
     color: white;
 }
 h1 {
-    font-size: 32px;
+    font-size: 24px;
+    font-weight: 600;
     margin-bottom: 8px;
 }
 
@@ -134,4 +137,59 @@ aside h2 span {
     width: 100%;
     max-width: 500px;
     margin-top: 40px;
+}
+.linha {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+}
+
+.linha div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.voltar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.voltar img {
+    width: 24px;
+    height: 24px;
+}
+
+.voltar span {
+    font-size: 16px;
+}
+.arquivo {
+    display: none;
+}
+
+.upload {
+    height: 120px;
+    border: 1px dashed #d6d3d1;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.upload span {
+    font-size: 24px;
+    color: #e43a12;
+}
+
+.upload strong {
+    font-size: 14px;
+    font-weight: 500;
+    color: #57534e;
 }
