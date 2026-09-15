@@ -14,12 +14,30 @@ main {
 }
 
 section {
-    padding: 40px;
+    padding: 48px 64px;
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 aside {
-    padding: 40px;
+    padding: 48px 64px;
     background-color: #FEE7D6;
+    min-height: 100vh;
+}
+
+.conteudo-aside {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+aside h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+aside p {
+    font-size: 16px;
 }
 
 form {
@@ -37,7 +55,11 @@ form label {
     margin-top: 12px;
 }
 
-form input,
+form input[type="text"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="file"],
 form select,
 form textarea {
     width: 100%;
@@ -49,4 +71,67 @@ form textarea {
 
 form textarea {
     resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.botoes button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #e43a12;
+    cursor: pointer;
+}
+
+.botoes button:first-child {
+    background-color: white;
+    color: #e43a12;
+}
+
+.botoes button:last-child {
+    background-color: #e43a12;
+    color: white;
+}
+h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+p {
+    line-height: 1.5;
+    color: #57534e;
+}
+
+label {
+    color: #292524;
+}
+.logo {
+    width: 180px;
+    margin-bottom: 24px;
+}
+
+aside h2 span {
+    color: #e43a12;
+}
+
+.ilustracao {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 40px;
 }
