@@ -239,9 +239,10 @@ aside h2 span {
 }
 
 .aviso-responsavel {
-    font-size: 14px;
-    margin-top: -8px;
+    font-size: 12px;
+    margin-top: 0;
     margin-bottom: 8px;
+    color: #78716c;
 }
 
 .termos {
@@ -318,4 +319,24 @@ form textarea:focus {
 .botoes {
     margin-top: 24px;
     margin-bottom: 40px;
+}
+@media (max-width: 900px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        max-width: 100%;
+        padding: 32px;
+    }
+
+    aside {
+        min-height: auto;
+        padding: 32px;
+    }
+
+    .opcoes-esporte {
+        grid-template-columns: 1fr 1fr;
+    }
 }

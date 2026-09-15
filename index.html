@@ -42,18 +42,19 @@
     <label for="nascimento">Data de nascimento</label>
     <input type="date" id="nascimento">
 
-    <label for="sexo">Sexo</label>
-    <select id="sexo">
-        <option value="">Selecione</option>
-        <option value="masculino">Masculino</option>
-        <option value="feminino">Feminino</option>
-    </select>
+<label for="sexo">Sexo</label>
+<select id="sexo">
+    <option value="">Selecione</option>
+    <option value="feminino">Feminino</option>
+    <option value="masculino">Masculino</option>
+    <option value="nao-responder">Prefiro não responder</option>
+</select>
 
     <label for="medicas">Informações médicas</label>
     <textarea
         id="medicas"
         rows="5"
-        placeholder="A criança possui alguma condição médica?"
+        placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (Se sim, especifique)"
     ></textarea>
 
     <label for="certidao">Certidão de nascimento</label>
@@ -100,12 +101,12 @@
 
     <h2>Informações do responsável</h2>
 
-    <p class="aviso-responsavel">
-        Preencha os dados do responsável legal pela criança.
-    </p>
-
     <label for="responsavel">Nome do responsável</label>
     <input type="text" id="responsavel">
+
+    <p class="aviso-responsavel">
+    Principal responsável legal e contato de emergência
+    </p>
 
     <label for="telefone">Telefone</label>
     <input type="tel" id="telefone" placeholder="(00) 00000-0000">
