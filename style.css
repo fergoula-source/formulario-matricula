@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: "Poppins", sans-serif;
     color: #57534e;
+    background-color: white;
 }
 
 main {
@@ -48,8 +49,8 @@ form {
     gap: 8px;
 }
 
-form h2 {
-    margin-bottom: 10px;
+form > label {
+    margin-top: 12px;
 }
 
 form label {
@@ -235,4 +236,86 @@ aside h2 span {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+}
+
+.aviso-responsavel {
+    font-size: 14px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+.termos {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 24px;
+    line-height: 1.5;
+}
+
+.termos input {
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.termos a {
+    color: #e43a12;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.card-opcao {
+    margin-top: 0;
+}
+
+form h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #292524;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+form > p {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="email"],
+form select {
+    height: 48px;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 2px solid #f3541c;
+    border-color: transparent;
+}
+
+.botoes button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    min-height: 48px;
+}
+
+.opcoes-turno {
+    margin-bottom: 24px;
+}
+
+.opcoes-esporte {
+    margin-bottom: 24px;
+}
+
+.termos {
+    margin-top: 32px;
+}
+
+.botoes {
+    margin-top: 24px;
+    margin-bottom: 40px;
 }
