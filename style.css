@@ -21,3 +21,32 @@ aside {
     padding: 40px;
     background-color: #FEE7D6;
 }
+
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form h2 {
+    margin-bottom: 10px;
+}
+
+form label {
+    margin-top: 12px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6d3d1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
