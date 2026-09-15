@@ -193,3 +193,46 @@ aside h2 span {
     font-weight: 500;
     color: #57534e;
 }
+
+.opcoes-turno {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.card-opcao {
+    border: 1px solid #d6d3d1;
+    border-radius: 8px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    cursor: pointer;
+}
+
+.card-opcao input {
+    align-self: flex-start;
+    margin: 0;
+}
+
+.card-opcao img {
+    width: 32px;
+    height: 32px;
+}
+
+.card-opcao span {
+    font-size: 14px;
+}
+
+.card-opcao:has(input:checked) {
+    border: 2px solid #e43a12;
+}
+
+.opcoes-esporte {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
